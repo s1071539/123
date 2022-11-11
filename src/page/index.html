@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+</head>
+
+<body>
+    <a href="a.html">go A page</a>
+
+
+    <fieldset>
+        <legend>載入圖片</legend>
+
+        <figure>
+            <img id="smallImg" />
+            <figcaption>small image(base64)</figcaption>
+        </figure>
+
+        <figure>
+            <img id="bigImg" />
+            <figcaption>big image</figcaption>
+        </figure>
+
+        <figure>
+            <img id="scssImg" />
+            <figcaption>scss background-image</figcaption>
+        </figure>
+    </fieldset>
+
+    <fieldset>
+        <legend>搬移檔案(copy-webpack-plugin)</legend>
+        <button id="downloadButton">download pdf</button>
+    </fieldset>
+
+
+    <h1 id="myCss">change by <span>myCss</span></h1>
+
+    <h1 id="myScss">change by <span>myScss</span></h1>
+
+    <h1 id="HuakangFont">懷康字體</h1>
+
+    <div>
+        [全域模組]get by jquery:{
+        <span id="myJQuery">wait for jquery</span>
+        }
+    </div>
+
+    <fieldset>
+        <legend>靜態載入</legend>
+        <div id="myJoke">wait for jokeAPI...</div>
+    </fieldset>
+
+    <fieldset>
+        <legend>動態載入</legend>
+        <div id="myLodash">wait for lodash...</div>
+    </fieldset>
+
+    [HtmlWebpackPlugin]傳入參數:{
+    <%= htmlWebpackPlugin.options.myText %>
+        }
+
+</body>
+
+</html>

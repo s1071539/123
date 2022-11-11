@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "DFHsiu-W3-WIN-BF";
+  src: url("../assets/DFHsiu-W3-WIN-BF.woff") format("woff");
+}
+
+body {
+  font-size: 30px;
+
+  fieldset {
+    display: flex;
+    width: fit-content;
+    figure {
+      img {
+        height: 200px;
+      }
+    }
+  }
+
+  #HuakangFont {
+    font-family: "DFHsiu-W3-WIN-BF";
+  }
+}
+
+#scssImg {
+  width: 200px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../img/forSass.jpg");
+}
